@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+div.container{
+    min-height: 100vh;
+}
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+header div.logo{
+    width: 70px;
+    background-color: white;
+    clip-path: circle(45%);
+}
+header div.logo img{
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+header div.menu{
+    padding: 10px;
+}
+header div.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    padding: 30px;
+}
+ul li a{
+    padding: 10px;
+    text-transform: capitalize;
+    color: white;
+    border-bottom: 0 solid yellow;
+    border-radius: 50%;
+    transition: all .3s;
+}
+ul li a:hover{
+    border-bottom: 2px solid yellow;
+}
+div.body{
+    position: relative;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: image 15s ease infinite;
+}
+div.body h1{
+    width: 700px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+div.x{
+    display: none;
+}
+div.body span{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 1s ease;
+}
+div.body span:hover{
+    background: black;
+    /*-webkit-text-stroke: 1px white; */
+}
+footer{
+    width: 100%;
+    height: 15vh;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    bottom: 0;
+}
+
+@keyframes image {
+    0%{
+        background-image: url(584380fa-a8e6-4a6d-a74a-d2d9300efb9c.jpeg);
+    }
+    20%{
+        background-image: url(monkey.jpeg);
+    }
+    40%{
+        background-image: url(Cheers.jpeg);
+    }
+    60%{
+        background-image: url(Bold\ &\ Reflective\ Art_\ Vivid\ Portrait\ for\ Inspired\ Spaces\ 🎨.jpg);
+    }
+    100%{
+        background-image: url(584380fa-a8e6-4a6d-a74a-d2d9300efb9c.jpeg);
+    }
+}
